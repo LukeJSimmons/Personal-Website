@@ -1,12 +1,63 @@
 html {
     background-color: #272946;
     color: #e7ffee;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 a {
     color: #eda031;
 }
 
+.flex {
+    display: flex;
+}
+
+/* Header */
+
 header ul li {
     display: inline;
+}
+
+/* Banner */
+
+#banner {
+    position: relative;
+
+    background-image: url("../images/BannerImg.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    z-index: -2;
+
+    height: 50rem;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the alpha channel (last value) for darkness */
+  }
+
+#banner h1 {
+    font-size: 4rem;
+    margin-bottom: -10px;
+    text-decoration: underline;
+}
+
+#banner h1,
+#banner h3 {
+    z-index: 2;
 }
