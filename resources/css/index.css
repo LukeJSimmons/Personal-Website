@@ -1,0 +1,12 @@
+html {
+    background-color: #272946;
+    color: #e7ffee;
+}
+
+a {
+    color: #eda031;
+}
+
+header ul li {
+    display: inline;
+}
