@@ -1,4 +1,5 @@
 html {
+    font-size: 20px;
     background-color: #272946;
     color: #e7ffee;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -14,6 +15,10 @@ a {
     color: #eda031;
     font-size: 1.5rem;
     text-decoration: none;
+}
+
+h2 {
+    color: #eda031;
 }
 
 .flex {
@@ -59,7 +64,7 @@ header ul li {
   }
 
 #banner h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     margin-bottom: -10px;
     text-decoration: underline;
 }
@@ -96,3 +101,31 @@ header ul li {
 #portfolio #etc {
     background-image: url("../images/link.png");
 }
+
+/* About Me */
+
+#about {
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    background-position: 0 -150px;
+    height: 20rem;
+    overflow: hidden;
+}
+
+#about .container {
+    width: 50%;
+    margin: 2rem 0;
+    padding: 0 15px;
+    border-radius: 20px;
+}
+
+#about img {
+    width: 50%;
+    position: relative;
+    top: 5rem;
+}
+
+/* Contact */
+
