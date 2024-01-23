@@ -2,6 +2,7 @@ html {
     background-color: #272946;
     color: #e7ffee;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 2px 2px 4px #272946;
 }
 
 body {
@@ -11,6 +12,8 @@ body {
 
 a {
     color: #eda031;
+    font-size: 1.5rem;
+    text-decoration: none;
 }
 
 .flex {
@@ -18,6 +21,10 @@ a {
 }
 
 /* Header */
+
+header ul {
+    justify-content: space-around;
+}
 
 header ul li {
     display: inline;
@@ -34,7 +41,7 @@ header ul li {
     background-position-y: bottom;
     z-index: -2;
 
-    height: 50rem;
+    height: 95vh;
 
     flex-direction: column;
     justify-content: center;
@@ -52,7 +59,7 @@ header ul li {
   }
 
 #banner h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     margin-bottom: -10px;
     text-decoration: underline;
 }
@@ -60,4 +67,32 @@ header ul li {
 #banner h1,
 #banner h3 {
     z-index: 2;
+}
+
+/* Portfolio */
+
+.project {
+    width: 25%;
+    padding-top: 15%;
+    background-size: cover;
+}
+
+.project h2 {
+    padding-left: 10px;
+}
+
+#portfolio #gameDev {
+    background-image: url("../images/link.png");
+}
+
+#portfolio #thisWebsite {
+    background-image: url("../images/link.png");
+}
+
+#portfolio #music {
+    background-image: url("../images/link.png");
+}
+
+#portfolio #etc {
+    background-image: url("../images/link.png");
 }
