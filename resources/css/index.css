@@ -76,6 +76,10 @@ header ul li {
 
 /* Portfolio */
 
+#portfolio {
+    border-bottom: #e7ffee solid 10px;
+}
+
 .project {
     width: 25%;
     padding-top: 15%;
@@ -108,17 +112,14 @@ header ul li {
     text-align: center;
     justify-content: space-between;
     align-items: center;
-    background-size: cover;
-    background-position: 0 -150px;
     height: 20rem;
     overflow: hidden;
+    border-bottom: #e7ffee solid 10px;
 }
 
 #about .container {
     width: 50%;
-    margin: 2rem 0;
     padding: 0 15px;
-    border-radius: 20px;
 }
 
 #about img {
@@ -129,3 +130,9 @@ header ul li {
 
 /* Contact */
 
+#contact {
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Footer */
