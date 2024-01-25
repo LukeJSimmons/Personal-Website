@@ -33,6 +33,11 @@ button {
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    transition: font-size 0.2s;
+}
+
+button:hover {
+    font-size: 0.85rem;
 }
 
 .flex {
@@ -40,6 +45,15 @@ button {
 }
 
 /* Header */
+
+header {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    transition: top 0.2s;
+}
 
 header ul {
     justify-content: space-around;
@@ -60,20 +74,22 @@ header ul li {
 
 #banner {
     position: relative;
-
+    
     background-image: url("../images/BannerImg.JPG");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: bottom;
     z-index: -2;
 
-    height: 95vh;
+    height: 100vh;
 
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     color: rgb(250, 250, 250);
+
+    text-shadow: 2px 2px black;
 }
 
 #banner::before {
@@ -85,6 +101,16 @@ header ul li {
     left: 0;
     background: rgba(0, 0, 0, 0.5); /* Adjust the alpha channel (last value) for darkness */
   }
+
+  /* #video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+  } */
 
 #banner h1 {
     font-size: 4rem;
@@ -121,6 +147,8 @@ header ul li {
     filter: brightness(0.5);
     transition-property: filter;
     transition-duration: 0.3s;
+    text-shadow: 2px 2px black;
+    background-position: center;
 }
 
 .project:hover {
@@ -143,19 +171,19 @@ header ul li {
 }
 
 #portfolio #gameDev {
-    background-image: url("../images/link.png");
+    background-image: url("../images/RiverSunsetSmall.png");
 }
 
 #portfolio #thisWebsite {
-    background-image: url("../images/link.png");
+    background-image: url("../images/ThisWebsite.png");
 }
 
 #portfolio #music {
-    background-image: url("../images/link.png");
+    background-image: url("../images/LJSIcon.png");
 }
 
 #portfolio #newsletter {
-    background-image: url("../images/link.png");
+    background-image: url("../images/Substack.png");
 }
 
 /* About Me */
@@ -189,10 +217,9 @@ header ul li {
     background-color: black;
     color: rgb(250, 250, 250);
     text-align: center;
-    height: 10rem;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    padding-bottom: 20px;
 }
 
 #contact h2 {

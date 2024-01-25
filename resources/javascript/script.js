@@ -25,3 +25,18 @@ document.addEventListener("DOMContentLoaded", function() {
         showLessBtn.style.display = "none";
     })
 })
+
+let prevScrollPos = window.scrollY;
+
+window.onscroll = function() {
+    const currentScrollPos = window.scrollY;
+    const header = document.querySelector('header');
+
+    if (prevScrollPos > currentScrollPos) {
+        header.style.top = '0';
+    } else {
+        header.style.top = '-80px';
+    }
+
+    prevScrollPos = currentScrollPos;
+}
