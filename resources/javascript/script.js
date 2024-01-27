@@ -2,12 +2,16 @@ document.addEventListener("DOMContentLoaded", function() {
     const container = document.getElementById("projectContainer");
     const showMoreBtn = document.getElementById("showMoreBtn");
     const showLessBtn = document.getElementById("showLessBtn");
-
-    const items = container.querySelectorAll(".project");
-    for (let i = 4; i < items.length; i++) {
+    
+    const items = container.querySelectorAll(".project"); 
+    for (let i = 4; i < items.length; i++) { 
         items[i].style.display = "none";
     }
     showLessBtn.style.display = "none";
+
+    if (items.length <= 4) { //Hides show more button if there's not more than four projects
+        showMoreBtn.style.display = "none";
+    }
 
     showMoreBtn.addEventListener("click", function() {
         for (let i = 4; i < items.length; i++) {
