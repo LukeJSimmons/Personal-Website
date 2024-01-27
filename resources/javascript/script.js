@@ -40,3 +40,11 @@ window.onscroll = function() {
 
     prevScrollPos = currentScrollPos;
 }
+
+const navBtn = document.getElementById("navBtn");
+const navScreen = document.getElementById("navScreen");
+
+navBtn.addEventListener("click", function() {
+    var displayValue = window.getComputedStyle(navScreen).getPropertyValue("display");
+    navScreen.style.display = (displayValue === "none") ? "flex" : "none";
+})
