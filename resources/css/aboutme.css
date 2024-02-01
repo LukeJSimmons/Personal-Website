@@ -1,0 +1,169 @@
+html {
+    font-size: 20px;
+    background-color: rgb(250, 250, 250);
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 1.75rem;
+    border-bottom: 2px solid black;
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 0;
+}
+
+button {
+    font-size: 0.75rem;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: font-size 0.2s;
+}
+
+button:hover {
+    font-size: 0.85rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    transition: top 0.2s;
+}
+
+header ul {
+    justify-content: space-around;
+}
+
+header ul li {
+    display: inline;
+    font-weight: bold;
+}
+
+header img {
+    display: none;
+    width: 50px;
+    margin-right: 10px;
+}
+
+#navScreen {
+    display: none;
+    flex-direction: column;
+    align-items: end;
+}
+
+#navScreen a {
+    padding-right: 15px;
+    margin-bottom: -15px;
+}
+
+@media screen and (max-width: 650px) {
+    header .flex {
+        justify-content: right;
+        align-items: center;
+    }
+    header ul li {
+        display: none;
+    }
+    header img {
+        display: inline;
+    }
+    #about {
+        background-image: url("../images/Me.jpg");
+        background-size: cover;
+        position: relative;
+        z-index: -2;
+    }
+    #about::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: -2;
+      }
+    #about img {
+        display: none;
+    }
+    #about h2,
+    #about p {
+        color: white;
+        z-index: 200;
+    }
+    #about h2 {
+        border-bottom: 2px solid white;
+    }
+    #contact {
+        flex-direction: column;
+        padding-bottom: 3rem;
+    }
+}
+
+/* About Me */
+
+#aboutMe {
+    justify-content: space-between;
+}
+
+#aboutIMG {
+    width: 40%;
+    height: fit-content;
+}
+
+#textContainer {
+    text-align: center;
+    margin: 6% 2%;
+    width: 60%;
+    flex-direction: column;
+    align-items: center;
+}
+
+#textContainer div {
+    border-bottom: 2px solid black;
+}
+
+#techExp {
+    justify-content: center;
+}
+
+#techExp a {
+    margin: 0 5px;
+}
+
+#workExp {
+    width: 50%;
+}

@@ -1,0 +1,126 @@
+html {
+    font-size: 20px;
+    background-color: rgb(250, 250, 250);
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* text-shadow: 2px 2px 4px black; */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 1.75rem;
+    border-bottom: 2px solid black;
+    display: inline-block;
+    padding: 5px 20px;
+}
+
+button {
+    font-size: 0.75rem;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: font-size 0.2s;
+}
+
+button:hover {
+    font-size: 0.85rem;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    transition: top 0.2s;
+}
+
+header ul {
+    justify-content: space-around;
+}
+
+header ul li {
+    display: inline;
+    font-weight: bold;
+}
+
+header img {
+    display: none;
+    width: 50px;
+    margin-right: 10px;
+}
+
+#navScreen {
+    display: none;
+    flex-direction: column;
+    align-items: end;
+}
+
+#navScreen a {
+    padding-right: 15px;
+    margin-bottom: -15px;
+}
+
+/* Portfolio */
+
+#portfolio {
+    margin: 30px;
+    text-align: left;
+}
+
+#portfolio h1 {
+    margin-top: 6%;
+    padding-bottom: 1%;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+
+#portfolio img {
+    width: 20%;
+    height: auto;
+    object-fit: cover;
+}
+
+#projectContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin: 2% 5%;
+    padding: 15px;
+    border: 2px solid black;
+    transition: padding 0.2s;
+}
+
+.project:hover {
+    
+}
+
+.project div {
+    margin-left: 15px;
+}
