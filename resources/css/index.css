@@ -255,6 +255,18 @@ header img {
     background-image: url("../images/Substack.png");
 }
 
+#portfolio #koineClothing {
+    background-image: url("../images/KoineClothing.png");
+}
+
+#portfolio #marketing {
+    background-image: url("../images/Marketing.png");
+}
+
+#portfolio #podcast {
+    background-image: url("../images/TechnicallsLogo.png");
+}
+
 /* About Me */
 
 #about {
