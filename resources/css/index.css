@@ -267,6 +267,15 @@ header img {
     background-image: url("../images/TechnicallsLogo.png");
 }
 
+#portfolio #art {
+    background-image: url("../images/NMEIcon3x.png");
+}
+
+#portfolio #art h3 {
+    color: black;
+    text-shadow: none;
+}
+
 /* About Me */
 
 #about {
