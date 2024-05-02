@@ -28,7 +28,27 @@
             <h1>Luke Simmons</h1>
             <h3>Coder - Designer - Podcaster</h3>
         </div>
-        <div id="portfolio">
+        <div id="substack" class="bottom-border">
+            <h2>Newsletter</h2>
+            
+            <div id="substack-feed-embed"></div>
+            <script>
+            window.SubstackFeedWidget = {
+                substackUrl: "lukesimmons.substack.com",
+                posts: 3,
+                layout: "center",
+                colors: {
+                primary: "#aec3d6",
+                secondary: "#aec3d6",
+                background: "#0b1424",
+                }
+            };
+            </script>
+            <script src="https://substackapi.com/embeds/feed.js" async></script>
+
+            <a href="https://lukesimmons.substack.com/" target="_blank"><button>See More</button></a>
+        </div>
+        <div id="portfolio" class="bottom-border">
             <h2>Portfolio</h2>
             <div id="projectContainer" class="flex">
                 <a class="project" id="art" href="https://dribbble.com/LukeJSimmons" target="_blank">
@@ -78,9 +98,9 @@
                 <h2>Follow</h2>
                 <br>
                 <br>
-                <a href="https://www.instagram.com/lordlucasjames/" target="_blank">Instagram</a>
-                <a href="https://lukesimmons.substack.com/" target="_blank">Newsletter</a>
-                <a href="https://youtube.com/@technicallspodcast/" target="_blank">Podcast</a>
+                <a href="https://www.instagram.com/lordlucasjames/" target="_blank"><img src="./resources/images/InstagramLogo.png" /></a>
+                <a href="https://twitter.com/LukeJSimmons/" target="_blank"><img src="./resources/images/twitterLogo.png" /></a>
+                <a href="https://www.linkedin.com/in/lukejsimmons1689/" target="_blank"><img src="./resources/images/linkedInLogo.png" /></a>
             </div>
         </div>
     </main>

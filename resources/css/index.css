@@ -1,7 +1,7 @@
 html {
     font-size: 20px;
-    background-color: rgb(250, 250, 250);
-    color: black;
+    background-color: #0b1424;
+    color: #aec3d6;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     /* text-shadow: 2px 2px 4px black; */
 }
@@ -12,14 +12,14 @@ body {
 }
 
 a {
-    color: black;
+    color: #aec3d6;
     font-size: 1.25rem;
     text-decoration: none;
 }
 
 h2 {
     font-size: 1.75rem;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #aec3d6;
     display: inline-block;
     padding: 5px 20px;
 }
@@ -28,8 +28,8 @@ button {
     font-size: 0.75rem;
     margin-top: 10px;
     padding: 8px 16px;
-    background-color: black;
-    color: white;
+    background-color: #25375c;
+    color: #aec3d6;
     border: none;
     border-radius: 3px;
     cursor: pointer;
@@ -44,11 +44,16 @@ button:hover {
     display: flex;
 }
 
+.bottom-border {
+    padding-bottom: 10px;
+    border-bottom: #25375c6f 5px dotted;
+}
+
 /* Header */
 
 header {
     position: fixed;
-    background-color: white;
+    background-color: #0b1424;
     width: 100%;
     z-index: 1000;
     top: 0;
@@ -62,6 +67,10 @@ header ul {
 header ul li {
     display: inline;
     font-weight: bold;
+}
+
+header a:hover {
+    color: #25375c;
 }
 
 header img {
@@ -113,11 +122,11 @@ header img {
     }
     #about h2,
     #about p {
-        color: white;
+        color: #aec3d6;
         z-index: 200;
     }
     #about h2 {
-        border-bottom: 2px solid white;
+        border-bottom: 2px solid #aec3d6;
     }
     #contact {
         flex-direction: column;
@@ -145,7 +154,7 @@ header img {
 
     text-align: center;
 
-    color: rgb(250, 250, 250);
+    color: #aec3d6;
 
     text-shadow: 2px 2px black;
 }
@@ -173,7 +182,7 @@ header img {
 #banner h1 {
     font-size: 4rem;
     margin-bottom: -10px;
-    border-bottom: 8px solid white;
+    border-bottom: 8px solid #aec3d6;
     font-weight: bold;
 }
 
@@ -194,6 +203,17 @@ header img {
     }
 }
 
+/* Newsletter */
+
+#substack {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#substack-feed-embed {
+    text-align: left;
+}
+
 /* Portfolio */
 
 #portfolio {
@@ -211,7 +231,7 @@ header img {
     width: 25%;
     padding-top: 15%;
     background-size: cover;
-    color: rgb(250, 250, 250);
+    color: #aec3d6;
     text-align: left;
     filter: brightness(0.5);
     transition-property: filter;
@@ -272,7 +292,7 @@ header img {
 }
 
 #portfolio #art h3 {
-    color: black;
+    color: #0b1424;
     text-shadow: none;
 }
 
@@ -284,6 +304,7 @@ header img {
     align-items: center;
     height: 20rem;
     overflow: hidden;
+    box-shadow: inset 0 -10px 10px rgba(0, 0, 0, 0.5);
 }
 
 #about .container {
@@ -298,6 +319,7 @@ header img {
     width: 50%;
     position: relative;
     top: 5rem;
+    box-shadow: inset 0 -10px 10px rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (min-width: 1250px) {
@@ -313,8 +335,8 @@ header img {
 /* Contact */
 
 #contact {
-    background-color: black;
-    color: rgb(250, 250, 250);
+    background-color: #25375c;
+    color: #aec3d6;
     text-align: center;
     justify-content: space-around;
     align-items: center;
@@ -322,13 +344,18 @@ header img {
 }
 
 #contact h2 {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #aec3d6;
     margin-bottom: -10px;
 }
 
 #contact a {
-    color: white;
+    color: #aec3d6;
     text-decoration: underline;
+}
+
+#contact img {
+    width: 75px;
+    color: #aec3d6;
 }
 
 /* Footer */
