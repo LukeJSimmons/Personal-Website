@@ -33,11 +33,14 @@ button {
     border: none;
     border-radius: 3px;
     cursor: pointer;
-    transition: font-size 0.2s;
+    transform: scale(1);
+    transition: transform 0.2s;
 }
 
 button:hover {
-    font-size: 0.85rem;
+    transform: scale(1.15);
+    background-color: #aec3d6;
+    color: #0b1424;
 }
 
 .flex {
@@ -57,6 +60,7 @@ header {
     width: 100%;
     z-index: 1000;
     top: 0;
+    box-shadow: 0px 5px 10px black;
     transition: top 0.2s;
 }
 
@@ -67,6 +71,10 @@ header ul {
 header ul li {
     display: inline;
     font-weight: bold;
+}
+
+header a {
+    transition: color 0.1s;
 }
 
 header a:hover {
@@ -144,6 +152,7 @@ header img {
     background-repeat: no-repeat;
     background-position-y: bottom;
     background-position-x: center;
+    background-attachment: fixed;
     z-index: -2;
 
     height: 100vh;
@@ -168,16 +177,6 @@ header img {
     left: 0;
     background: rgba(0, 0, 0, 0.5); /* Adjust the alpha channel (last value) for darkness */
   }
-
-  /* #video-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    object-fit: cover;
-  } */
 
 #banner h1 {
     font-size: 4rem;
@@ -215,6 +214,15 @@ header img {
 #substack-feed-embed {
     text-align: left;
     width: 75%;
+}
+
+#substack-feed-embed a {
+    transform: scale(1);
+    transition: transform 0.2s;
+}
+
+#substack-feed-embed a:hover {
+    transform: scale(1.05);
 }
 
 @media screen and (min-width: 2155px) {
@@ -363,14 +371,15 @@ header img {
     margin-bottom: -10px;
 }
 
-#contact a {
-    color: #aec3d6;
-    text-decoration: underline;
-}
-
 #contact img {
     width: 75px;
-    color: #aec3d6;
+    background-color: #ffffff00;
+    border-radius: 1vh;
+    transition: background-color 0.2s;
+}
+
+#contact img:hover {
+    background-color: #0b1424;
 }
 
 /* Footer */
