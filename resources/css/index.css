@@ -185,9 +185,9 @@ header img {
     font-weight: bold;
 }
 
-#banner h1,
-#banner h3 {
+#banner img {
     z-index: 2;
+    width: 50%;
 }
 
 @media screen and (max-width: 350px) {
